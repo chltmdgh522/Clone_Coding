@@ -3,22 +3,33 @@
   <head>
     <title>CSH</title>
     <style>
+      * {
+        border: 2px solid darkblue;
+      }
       html {
         background-color: aquamarine;
+        border: 2px solid darkblue;
       }
       body {
         margin: 0;
-        margin-top: 50px;
-        margin: 10px 10px;
-        margin: 10px 10px 11px 12px;
-
+        padding: 20px;
         background-color: black;
       }
       div {
-        margin-top: 50px;
-        height: 150px;
-        width: 150px;
         background-color: red;
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        border: 2px solid darkblue;
+        border-style: dotted;
+      }
+      #f {
+        background-color: teal;
+      }
+      #t {
+        background-color: wheat;
+        height: 70px;
+        width: 70px;
       }
       span {
         display: block;
@@ -27,8 +38,9 @@
     </style>
   </head>
   <body>
-    <div>a</div>
-    <div>a</div>
+    <div id="f">
+      <div id="t"></div>
+    </div>
     <span>hello</span>
     <span>hello</span>
   </body>
