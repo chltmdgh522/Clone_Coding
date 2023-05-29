@@ -1,11 +1,16 @@
 
 .status-bar{
+
     display: flex;
     justify-content: space-between;
-    padding: 5px 3px;
+    padding: 5px 10px;
+
     }
     .status-bar__column:first-child span{
         margin-right: 5px;
+    }
+    .status-bar__column span{
+        font-weight: 600;
     }
     
     .status-bar__column .fas fa-battery-three-quartersr{
