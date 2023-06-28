@@ -4,25 +4,48 @@ console.dir(title);
 
 
 
-const title1=document.querySelector("div.abc:first-child h1");
-console.log(title1);
+const h1=document.querySelector("div.abc:first-child h1");
+console.log(h1);
 
-title1.style.color="red";
+h1.style.color="red";
 
 function handleTitleClick(){
    
-    title1.style.color="blue";
+    h1.style.color="blue";
 }
-title1.addEventListener("click",handleTitleClick);
+h1.addEventListener("click",handleTitleClick);
 
 function handleMouseEnter(){
-    title1.innerText="바뀜";
+    h1.innerText="바뀜";
 }
 
-title1.addEventListener("mouseenter",handleMouseEnter);
+h1.addEventListener("mouseenter",handleMouseEnter);
 
 function handleMouseLeave(){
-    title1.innerText="바뀜1";
+    h1.innerText="바뀜1";
 }
 
-title1.addEventListener("mouseleave",handleMouseLeave);
+h1.addEventListener("mouseleave",handleMouseLeave);
+h1.onmouselinstenr=handleMouseLeave;
+
+function handleWindowResize(){
+    document.body.style.backgroundColor="aqua";
+}
+
+window.addEventListener("resize", handleWindowResize);
+
+function handleWindowCopy(){
+    alert("ㅎㅇ");
+}
+
+window.addEventListener("copy", handleWindowCopy);
+
+function handleWindowOffline(){
+    alert("no wifi");
+}
+function handleWindowOnline(){
+    alert("yes wifi");
+}
+
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
